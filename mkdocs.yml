@@ -1,0 +1,32 @@
+site_name: Zhihan Zhang Research Portfolio
+site_description: Research projects in applied statistics, quantitative finance, crypto markets, and empirical modeling.
+site_author: Zhihan Zhang
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - About Me: about.md
+  - Research Projects:
+      - Crypto Policy, Stablecoin Exposure, and Inflation:
+          - Overview: projects/crypto-policy-stablecoin-inflation.md
+          - Results and Demo Code: projects/crypto-results-code.md
+      - DEX-CEX Price Discovery: projects/dex-cex-price-discovery.md
+      - E-commerce Consumer Credit Model: projects/ecommerce-consumer-credit.md
+      - Quantitative Research Internship: projects/quant-internship.md
+      - Dynamic Control on UGC Platforms: projects/ugc-platform-reference-effect.md
+      - Pay-on-Delivery and Distribution Contracts: projects/pay-on-delivery-contracts.md
+  - CV: cv.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
