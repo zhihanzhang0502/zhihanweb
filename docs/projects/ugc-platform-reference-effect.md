@@ -49,9 +49,6 @@ Numerical simulations are used to illustrate the optimal paths of reference qual
 
 - Game theory
 - Differential games
-- Optimal control
-- Stochastic modeling
 - Numerical analysis
-- Platform economics
 - Operations research
-- Research writing
+

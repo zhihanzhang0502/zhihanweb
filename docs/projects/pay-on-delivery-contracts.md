@@ -65,4 +65,3 @@ These extensions show that the main mechanism remains robust when additional ope
 - Distribution contract analysis
 - Analytical modeling
 - Operations research
-- Research writing

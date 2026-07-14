@@ -85,13 +85,6 @@ I classify countries into three crypto policy regimes:
 
 The regime interaction results suggest that the negative stablecoin exposure effect is mainly concentrated in Restricted countries.
 
-## Code Structure
 
-```text
-notebooks/
-├── 01_policy_data_construction.ipynb
-├── 02_panel_construction.ipynb
-├── 03_main_regressions.ipynb
-├── 04_regime_heterogeneity.ipynb
 
 

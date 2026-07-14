@@ -25,5 +25,4 @@ A draft manuscript for this project is available below.
 - Mathematical modeling
 - Numerical analysis
 - Mathematica
-- Economic modeling
-- Research writing
+
