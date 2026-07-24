@@ -22,6 +22,7 @@ nav:
       - Quantitative Research Internship: projects/quant-internship.md
       - Dynamic Control on UGC Platforms: projects/ugc-platform-reference-effect.md
       - Pay-on-Delivery and Distribution Contracts: projects/pay-on-delivery-contracts.md
+      - AI-Assisted Creation on Pure-Content UGC Platforms: projects/ai-assisted-ugc-platforms.md
   - CV: cv.md
 
 markdown_extensions:
