@@ -1,4 +1,4 @@
-# Results and Demo Code
+<!-- # Results and Demo Code
 
 This page summarizes selected regression results and core demo code for the crypto policy, stablecoin exposure, and inflation project.
 
@@ -19,7 +19,7 @@ The regime interaction models suggest that the negative stablecoin exposure effe
 |---|---:|---:|---|
 | Restricted countries | -4.342 | -3.260 | Negative effect is strongest in Restricted countries |
 | Legal relative to Restricted | 4.192 | 2.556 | Legal countries have a higher exposure effect relative to Restricted countries |
-| Illegal relative to Restricted | 4.131 | 2.560 | Illegal countries also have a higher exposure effect relative to Restricted countries |
+| Illegal relative to Restricted | 4.131 | 2.560 | Illegal countries also have a higher exposure effect relative to Restricted countries | -->
 
 ## Demo Code: Stablecoin Exposure Construction
 

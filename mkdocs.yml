@@ -12,17 +12,55 @@ theme:
 
 nav:
   - Home: index.md
-  - About Me: about.md
   - Research Projects:
       - Crypto Policy, Stablecoin Exposure, and Inflation:
-          - Overview: projects/crypto-policy-stablecoin-inflation.md
-          - Results and Demo Code: projects/crypto-results-code.md
-      - DEX-CEX Price Discovery: projects/dex-cex-price-discovery.md
-      - E-commerce Consumer Credit Model: projects/ecommerce-consumer-credit.md
-      - Quantitative Research Internship: projects/quant-internship.md
-      - Dynamic Control on UGC Platforms: projects/ugc-platform-reference-effect.md
-      - Pay-on-Delivery and Distribution Contracts: projects/pay-on-delivery-contracts.md
-      - AI-Assisted Creation on Pure-Content UGC Platforms: projects/ai-assisted-ugc-platforms.md
+          - Overview: projects/crypto-policy-stablecoin-inflation/overview.md
+          - Research Questions: projects/crypto-policy-stablecoin-inflation/research-questions.md
+          - Research Details: projects/crypto-policy-stablecoin-inflation/research-details.md
+          - Key Findings & Outputs: projects/crypto-policy-stablecoin-inflation/key-findings-outputs.md
+          - Demo code: projects/crypto-policy-stablecoin-inflation/crypto-results-code.md
+
+      - State-Dependent DEX-CEX Price Discovery:
+          - Overview: projects/dex-cex-price-discovery/overview.md
+          - Research Questions: projects/dex-cex-price-discovery/research-questions.md
+          - Research Details: projects/dex-cex-price-discovery/research-details.md
+          - Key Findings & Outputs: projects/dex-cex-price-discovery/key-findings-outputs.md
+        #   - Publications: projects/dex-cex-price-discovery/publications.md
+
+      - E-commerce Consumer Credit Model:
+          - Overview: projects/ecommerce-consumer-credit/overview.md
+          - Research Questions: projects/ecommerce-consumer-credit/research-questions.md
+          - Research Details: projects/ecommerce-consumer-credit/research-details.md
+          - Key Findings & Outputs: projects/ecommerce-consumer-credit/key-findings-outputs.md
+          - Publications: projects/ecommerce-consumer-credit/publications.md
+
+      - Quantitative Research Internship:
+          - Overview: projects/quant-internship/overview.md
+          - Research Questions: projects/quant-internship/research-questions.md
+          - Research Details: projects/quant-internship/research-details.md
+          - Key Findings & Outputs: projects/quant-internship/key-findings-outputs.md
+          # - Publications: projects/quant-internship/publications.md
+
+      - Dynamic Control on UGC Platforms:
+          - Overview: projects/ugc-platform-reference-effect/overview.md
+          - Research Questions: projects/ugc-platform-reference-effect/research-questions.md
+          - Research Details: projects/ugc-platform-reference-effect/research-details.md
+          - Key Findings & Outputs: projects/ugc-platform-reference-effect/key-findings-outputs.md
+          - Publications: projects/ugc-platform-reference-effect/publications.md
+
+      - Pay-on-Delivery and Distribution Contracts:
+          - Overview: projects/pay-on-delivery-contracts/overview.md
+          - Research Questions: projects/pay-on-delivery-contracts/research-questions.md
+          - Research Details: projects/pay-on-delivery-contracts/research-details.md
+          - Key Findings & Outputs: projects/pay-on-delivery-contracts/key-findings-outputs.md
+          - Publications: projects/pay-on-delivery-contracts/publications.md
+
+      - AI-Assisted Creation on Pure-Content UGC Platforms:
+          - Overview: projects/ai-assisted-ugc-platforms/overview.md
+          - Research Questions: projects/ai-assisted-ugc-platforms/research-questions.md
+          - Research Details: projects/ai-assisted-ugc-platforms/research-details.md
+          - Key Findings & Outputs: projects/ai-assisted-ugc-platforms/key-findings-outputs.md
+          - Publications: projects/ai-assisted-ugc-platforms/publications.md
   - CV: cv.md
 
 markdown_extensions:
