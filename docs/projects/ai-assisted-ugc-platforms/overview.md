@@ -8,6 +8,7 @@ Pure-content UGC platforms rely on creators to produce engaging content and attr
 
 This project develops analytical models to study a platform's decision to launch AI-assisted tools and choose the optimal assistance intensity. The model captures the trade-off between AI-driven efficiency and creativity improvements, increased content homogeneity, and platform development costs.
 
-## Timeline
+My contributions included formulating research question, performing Mathematica and GPT based analysis and numerical simulations, and contributing to the co-authored research paper.
 
-- Research involvement: May 2026 – August 2026
+**Duration:** May 2026 – August 2026
+**Affiliation:** Shanghai Institute of Technology, China

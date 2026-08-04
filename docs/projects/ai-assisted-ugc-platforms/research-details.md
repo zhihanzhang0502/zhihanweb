@@ -10,23 +10,23 @@ The decision sequence is:
 
 The analysis uses backward induction and comparative statics to characterize equilibrium outcomes. The model accounts for AI-driven production efficiency gains, creativity enhancement, content homogeneity, and development costs.
 
-## Extensions
+<!-- ## Extensions
 
 The project further examines:
 
 - Different consumer weights on creativity and production quality.
 - Creator competition on the platform.
 - Endogenous platform subsidies to creators.
-- AI technical defects and their impact on platform and creator decisions.
+- AI technical defects and their impact on platform and creator decisions. -->
 
-## My Contributions
+<!-- ## My Contributions
 
 - Contributed to the development of the sequential game-theoretic model.
 - Helped organize the analysis of platform AI-tool adoption and creator content-quality decisions.
 - Assisted with comparative statics and interpretation of equilibrium results.
-- Participated in drafting and refining the working-paper manuscript.
+- Participated in drafting and refining the working-paper manuscript. -->
 
-## Skills Used
+<!-- ## Skills Used
 
 - Game theory
 - Sequential decision modeling
@@ -35,4 +35,4 @@ The project further examines:
 - Platform economics
 - AI and digital-platform strategy
 - Operations research
-- Research writing
+- Research writing -->

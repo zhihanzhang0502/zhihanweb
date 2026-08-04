@@ -6,7 +6,7 @@ This project studies when a hybrid e-commerce platform should introduce a consum
 
 The model considers a hybrid platform that resells one product while allowing a third-party seller to sell a competing product through the platform. The platform must balance the demand-enhancing benefits of consumer credit against repayment risk and the potential loss of competitive advantage from sharing the service.
 
-My contributions included developing the theoretical model, conducting equilibrium and comparative-statics analyses, performing Mathematica-based numerical simulations, and contributing to the co-authored research paper.
+My contributions included formulating research question, performing Mathematica-based numerical simulations, and contributing to the co-authored research paper.
 
 **Duration:** May 2024 – August 2024
 **Affiliation:** Tongji University, China

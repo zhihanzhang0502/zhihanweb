@@ -1858,24 +1858,24 @@
 <p>The Uniswap and Binance datasets were cleaned, aggregated, and aligned to the same two-minute intervals. Current values and one- and two-period lags were then constructed within each trading pair.</p>
 <h2 id="model">Model<a class="headerlink" href="#model" title="Permanent link">&para;</a></h2>
 <p>The dependent variable is the Binance return in basis points:</p>
-<p>[
+<div class="arithmatex">\[
 R_{i,t}^{CEX}
 =
 \left[
 \ln(P_{i,t})-\ln(P_{i,t-1})
 \right]\times 10{,}000
-]</p>
-<p>where (P_{i,t}) is the volume-weighted average Binance price for token pair (i) during interval (t).</p>
+\]</div>
+<p>where <span class="arithmatex">\(P_{i,t}\)</span> is the volume-weighted average Binance price for token pair <span class="arithmatex">\(i\)</span> during interval <span class="arithmatex">\(t\)</span>.</p>
 <p>DEX net trade flow is defined as:</p>
-<p>[
+<div class="arithmatex">\[
 Flow_{i,t}^{DEX}
 =
 BuyVolume_{i,t}^{DEX}
 -
 SellVolume_{i,t}^{DEX}
-]</p>
+\]</div>
 <p>CEX illiquidity is measured as:</p>
-<p>[
+<div class="arithmatex">\[
 Illiquidity_{i,t}^{CEX}
 =
 \frac{
@@ -1885,9 +1885,9 @@ Illiquidity_{i,t}^{CEX}
 }{
 TradingVolume_{i,t}^{CEX}
 }
-]</p>
+\]</div>
 <h3 id="baseline-price-discovery-model">Baseline Price-Discovery Model<a class="headerlink" href="#baseline-price-discovery-model" title="Permanent link">&para;</a></h3>
-<p>[
+<div class="arithmatex">\[
 R_{i,t}^{CEX}
 =
 \beta_0
@@ -1903,11 +1903,11 @@ R_{i,t}^{CEX}
 \gamma_2Flow_{i,t-2}^{DEX}
 +
 \varepsilon_{i,t}
-]</p>
+\]</div>
 <p>This model tests whether current and lagged DEX flows are associated with Binance returns.</p>
 <h3 id="congestion-model">Congestion Model<a class="headerlink" href="#congestion-model" title="Permanent link">&para;</a></h3>
 <p>The congestion specification adds current and lagged congestion measures and interactions between DEX flow and congestion:</p>
-<p>[
+<div class="arithmatex">\[
 R_{i,t}^{CEX}
 =
 \beta_0
@@ -1926,11 +1926,11 @@ Congestion_{i,t-j}
 \right)
 +
 \varepsilon_{i,t}
-]</p>
+\]</div>
 <p>A positive interaction coefficient indicates that DEX flow becomes more informative when the blockchain is more congested.</p>
 <h3 id="cex-illiquidity-model">CEX Illiquidity Model<a class="headerlink" href="#cex-illiquidity-model" title="Permanent link">&para;</a></h3>
 <p>The illiquidity specification adds current and lagged CEX illiquidity and their interactions with DEX flow:</p>
-<p>[
+<div class="arithmatex">\[
 R_{i,t}^{CEX}
 =
 \beta_0
@@ -1949,7 +1949,7 @@ Illiquidity_{i,t-j}^{CEX}
 \right)
 +
 \varepsilon_{i,t}
-]</p>
+\]</div>
 <p>A negative interaction coefficient indicates that weak CEX liquidity reduces the transmission of information from DEX trading activity.</p>
 <h3 id="estimation">Estimation<a class="headerlink" href="#estimation" title="Permanent link">&para;</a></h3>
 <p>For each hypothesis, four specifications were estimated:</p>
@@ -2085,6 +2085,10 @@ Illiquidity_{i,t-j}^{CEX}
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

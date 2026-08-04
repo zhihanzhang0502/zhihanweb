@@ -6,7 +6,7 @@ This project studies how a user-generated content platform should dynamically ba
 
 The platform determines the recommendation intensity of pure content, while the content creator determines pure content quality. The research examines how these decisions affect user engagement and the profits of both parties under evolving and uncertain reference quality.
 
-My contributions included developing the dynamic game-theoretic framework, modeling recommendation intensity and content quality as dynamic decision variables, conducting optimal-control analysis and Mathematica-based numerical simulations, and contributing to the co-authored journal article.
+My contributions included, conducting analysis and numerical simulations based on Mathematica, and contributing to the co-authored journal article.
 
 **Duration:** December 2023 – March 2024; May 2025 – July 2025  
 **Affiliation:** Tongji University, China
