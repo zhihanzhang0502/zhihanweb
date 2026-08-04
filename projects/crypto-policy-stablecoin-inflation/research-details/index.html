@@ -1907,7 +1907,7 @@
 <tbody>
 <tr>
 <td><code>policy_attention</code></td>
-<td>$\log(1 + \text{number of unique policy titles})$</td>
+<td><span class="arithmatex">\(\log(1 + \text{number of unique policy titles})\)</span></td>
 </tr>
 <tr>
 <td><code>avg_restrictiveness</code></td>
@@ -1933,7 +1933,7 @@
 </table>
 <h2 id="stablecoin-exposure-measure">Stablecoin Exposure Measure<a class="headerlink" href="#stablecoin-exposure-measure" title="Permanent link">&para;</a></h2>
 <p>The central explanatory variable combines a global stablecoin shock with local cryptocurrency attention:</p>
-<p>$$
+<div class="arithmatex">\[
 Exposure_{i,t-1}
 =
 \left(
@@ -1941,40 +1941,40 @@ Exposure_{i,t-1}
 \right)
 \times
 \Delta \log(USDTMarketCap_{t-1})
-$$</p>
+\]</div>
 <p>The exposure measure is standardized before entering the preferred regression.</p>
 <p>A higher value indicates that a country has both relatively high local cryptocurrency attention and greater exposure to a contemporaneous global expansion in USDT market capitalization.</p>
 <h2 id="model">Model<a class="headerlink" href="#model" title="Permanent link">&para;</a></h2>
 <p>The preferred specification is:</p>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
 Inflation_{i,t}
-=&amp;\ \beta_1 Exposure^{z}<em i_t-1="i,t-1">{i,t-1}
-+ \beta_2 PolicyIntensity^{z}</em>
-+ \beta_3 FXChange^{z}<em i_t-1="i,t-1">{i,t-1} \
-&amp;+ \beta_4 FiscalDeficit^{z}</em>
-+ \beta_5 Unemployment^{z}<em i_t-1="i,t-1">{i,t-1}
-+ \beta_6 CurrentAccountDeficit^{z}</em> \
-&amp;+ \beta_7 BroadMoneyGrowth^{z}<em i_t-1="i,t-1">{i,t-1}
-+ \beta_8 (Exposure^{z}</em>} \times FXChange^{z<em i_t-1="i,t-1">{i,t-1}) \
-&amp;+ \beta_9 (FXChange^{z}</em>} \times CurrentAccountDeficit^{z<em i_t="i,t">{i,t-1}) \
-&amp;+ \alpha_i + \lambda_y + \delta_m + \varepsilon</em>.
+=&amp;\ \beta_1 Exposure^{z}_{i,t-1}
++ \beta_2 PolicyIntensity^{z}_{i,t-1}
++ \beta_3 FXChange^{z}_{i,t-1} \\
+&amp;+ \beta_4 FiscalDeficit^{z}_{i,t-1}
++ \beta_5 Unemployment^{z}_{i,t-1}
++ \beta_6 CurrentAccountDeficit^{z}_{i,t-1} \\
+&amp;+ \beta_7 BroadMoneyGrowth^{z}_{i,t-1}
++ \beta_8 (Exposure^{z}_{i,t-1} \times FXChange^{z}_{i,t-1}) \\
+&amp;+ \beta_9 (FXChange^{z}_{i,t-1} \times CurrentAccountDeficit^{z}_{i,t-1}) \\
+&amp;+ \alpha_i + \lambda_y + \delta_m + \varepsilon_{i,t}.
 \end{aligned}
-$$</p>
+\]</div>
 <p>where:</p>
 <ul>
-<li>$\alpha_i$ represents country fixed effects.</li>
-<li>$\lambda_y$ represents year fixed effects.</li>
-<li>$\delta_m$ represents calendar-month fixed effects.</li>
+<li><span class="arithmatex">\(\alpha_i\)</span> represents country fixed effects.</li>
+<li><span class="arithmatex">\(\lambda_y\)</span> represents year fixed effects.</li>
+<li><span class="arithmatex">\(\delta_m\)</span> represents calendar-month fixed effects.</li>
 <li>Continuous explanatory variables are standardized.</li>
 <li>Standard errors are clustered by country.</li>
 </ul>
 <p>The robustness specification additionally includes:</p>
-<p>$$
-FiscalDeficit^{z}<em i_t-1="i,t-1">{i,t-1}
+<div class="arithmatex">\[
+FiscalDeficit^{z}_{i,t-1}
 \times
-BroadMoneyGrowth^{z}</em>.
-$$</p>
+BroadMoneyGrowth^{z}_{i,t-1}.
+\]</div>
 <h2 id="demo-code-exposure-construction">Demo Code: Exposure Construction<a class="headerlink" href="#demo-code-exposure-construction" title="Permanent link">&para;</a></h2>
 <pre><code class="language-python">import numpy as np
 
@@ -2121,6 +2121,10 @@ print(model.summary())
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

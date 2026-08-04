@@ -1811,17 +1811,17 @@
 <tr>
 <td>Current DEX net flow</td>
 <td style="text-align: right;">0.086450</td>
-<td style="text-align: right;">(p&lt;0.01)</td>
+<td style="text-align: right;"><span class="arithmatex">\(p&lt;0.01\)</span></td>
 </tr>
 <tr>
 <td>DEX net flow, lag 1</td>
 <td style="text-align: right;">0.025113</td>
-<td style="text-align: right;">(p&lt;0.01)</td>
+<td style="text-align: right;"><span class="arithmatex">\(p&lt;0.01\)</span></td>
 </tr>
 <tr>
 <td>DEX net flow, lag 2</td>
 <td style="text-align: right;">-0.006938</td>
-<td style="text-align: right;">(p&lt;0.01)</td>
+<td style="text-align: right;"><span class="arithmatex">\(p&lt;0.01\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -1842,12 +1842,12 @@
 <tr>
 <td>DEX flow × congestion</td>
 <td style="text-align: right;">0.002785</td>
-<td style="text-align: right;">(p&lt;0.01)</td>
+<td style="text-align: right;"><span class="arithmatex">\(p&lt;0.01\)</span></td>
 </tr>
 <tr>
 <td>DEX flow, lag 1 × congestion, lag 1</td>
 <td style="text-align: right;">0.001168</td>
-<td style="text-align: right;">(p&lt;0.01)</td>
+<td style="text-align: right;"><span class="arithmatex">\(p&lt;0.01\)</span></td>
 </tr>
 <tr>
 <td>DEX flow, lag 2 × congestion, lag 2</td>
@@ -1878,7 +1878,7 @@
 <tr>
 <td>DEX flow, lag 1 × CEX illiquidity, lag 1</td>
 <td style="text-align: right;">-1.194935</td>
-<td style="text-align: right;">(p&lt;0.01)</td>
+<td style="text-align: right;"><span class="arithmatex">\(p&lt;0.01\)</span></td>
 </tr>
 <tr>
 <td>DEX flow, lag 2 × CEX illiquidity, lag 2</td>
@@ -1903,32 +1903,32 @@
 <tr>
 <th>Hypothesis</th>
 <th>Main full-model result</th>
-<th style="text-align: right;">Adjusted (R^2)</th>
+<th style="text-align: right;">Adjusted <span class="arithmatex">\(R^2\)</span></th>
 <th style="text-align: right;">Observations</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>H1: DEX flow predicts CEX returns</td>
-<td>Current flow (=0.086450^{<strong><em>}); lag 1 (=0.025113^{</em></strong>})</td>
+<td>Current flow <span class="arithmatex">\(=0.086450^{***}\)</span>; lag 1 <span class="arithmatex">\(=0.025113^{***}\)</span></td>
 <td style="text-align: right;">0.052</td>
 <td style="text-align: right;">244,788</td>
 </tr>
 <tr>
 <td>H2: Congestion strengthens transmission</td>
-<td>Current interaction (=0.002785^{<strong><em>}); lag-1 interaction (=0.001168^{</em></strong>})</td>
+<td>Current interaction <span class="arithmatex">\(=0.002785^{***}\)</span>; lag-1 interaction <span class="arithmatex">\(=0.001168^{***}\)</span></td>
 <td style="text-align: right;">0.056</td>
 <td style="text-align: right;">244,788</td>
 </tr>
 <tr>
 <td>H3: Illiquidity weakens transmission</td>
-<td>Lag-1 interaction (=-1.194935^{***})</td>
+<td>Lag-1 interaction <span class="arithmatex">\(=-1.194935^{***}\)</span></td>
 <td style="text-align: right;">0.061</td>
 <td style="text-align: right;">203,210</td>
 </tr>
 </tbody>
 </table>
-<p>(^{***}p&lt;0.01)</p>
+<p><span class="arithmatex">\(^{***}p&lt;0.01\)</span></p>
 <h2 id="research-outputs">Research Outputs<a class="headerlink" href="#research-outputs" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Constructed a two-minute panel linking Uniswap and Binance trading activity.</li>
@@ -1993,6 +1993,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
