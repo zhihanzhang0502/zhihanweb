@@ -1,3 +1,4 @@
+
 site_name: Zhihan Zhang Research Portfolio
 site_description: Research projects in applied statistics, quantitative finance, crypto markets, and empirical modeling.
 site_author: Zhihan Zhang
@@ -69,3 +70,9 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
