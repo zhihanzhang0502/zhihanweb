@@ -1,80 +1,122 @@
 # Research Details
 
-## Input
+## Market Setting
 
-This project develops an analytical game-theoretic model rather than using an empirical dataset.
+The model considers a dual-channel supply chain consisting of a manufacturer, an e-commerce platform, and a continuum of consumers.
 
-| Input | Description |
-|---|---|
-| Manufacturer | Operates an offline channel and cooperates with an e-commerce platform online |
-| E-commerce platform | Operates the online channel as either a reseller or an intermediary |
-| Consumers | Choose between the offline channel, the online channel, and no purchase |
-| Wholesale contract | The platform purchases from the manufacturer and resells online |
-| Agency contract | The manufacturer sells directly through the platform and pays a commission |
-| \(v\) | Consumer valuation of the product |
-| \(\theta\) | Valuation discount caused by delayed product receipt |
-| \(\gamma\) | Revenue discount caused by the cash-flow opportunity cost of deferred payment |
-| \(l\) | Shopping-cost difference between the offline and online channels |
-| \(\alpha\) | Pay-on-delivery service fee under the agency contract |
-| \(\beta\) | Platform commission rate under the agency contract |
-| \(p_f\) | Offline retail price |
-| \(p_n\) | Online retail price |
-| \(w\) | Wholesale price under the wholesale contract |
-| \(\delta\) | Probability that an online product fits consumer needs |
-| \(m\) | Consumer hassle cost associated with returning a product |
-| \(c\) | Return-handling cost borne by the online seller |
+The manufacturer operates an offline channel and collaborates with the platform to establish an online channel:
 
-## Model
+- Under the **wholesale contract**, the platform purchases the product from the manufacturer and resells it online.
+- Under the **agency contract**, the manufacturer sells directly through the platform and pays a commission fee.
 
-Consumer utility from purchasing offline is:
+Pay-on-delivery allows consumers to postpone payment until product receipt. The service reduces the online channel's delivery-delay disadvantage but also postpones firms' cash recovery.
 
-\[
-u_f=v-p_f-l
-\]
+## Operational Scenarios
 
-Without pay-on-delivery, online utility is:
+![Channel configurations under the WN, WY, AN, and AY scenarios](../../assets/images/payonde.jpg){ width="100%" }
 
-\[
-u_n^N=\theta v-p_n
-\]
-
-With pay-on-delivery, consumers postpone payment until receiving the product:
-
-\[
-u_n^Y=\theta(v-p_n)
-\]
-
-The analysis compares four scenarios.
+*Figure 1. Channel configurations under wholesale and agency contracts, with and without pay-on-delivery.*
 
 | Scenario | Distribution contract | Payment scheme |
 |---|---|---|
-| **WN** | Wholesale contract | No pay-on-delivery |
-| **WY** | Wholesale contract | Pay-on-delivery |
-| **AN** | Agency contract | No pay-on-delivery |
-| **AY** | Agency contract | Pay-on-delivery |
+| **WN** | Wholesale | No pay-on-delivery |
+| **WY** | Wholesale | Pay-on-delivery |
+| **AN** | Agency | No pay-on-delivery |
+| **AY** | Agency | Pay-on-delivery |
 
-The game proceeds through the following stages:
+Under the wholesale contract, the platform independently decides whether to offer pay-on-delivery. Under the agency contract, implementation requires both the platform's willingness to offer the service and the manufacturer's willingness to adopt it.
 
-1. The manufacturer selects the wholesale or agency contract.
-2. The platform decides whether to offer pay-on-delivery.
-3. Under the agency contract, the manufacturer decides whether to adopt the service.
-4. The manufacturer determines its relevant wholesale and offline prices.
-5. The platform or manufacturer determines the online retail price, depending on the contract.
+## Model Notation
 
-The model is solved using backward induction, equilibrium analysis, comparative statics, and Mathematica-based numerical analysis.
+| Symbol | Meaning | Symbol | Meaning |
+|---|---|---|---|
+| \(v\) | Consumer valuation, \(v\sim U[0,1]\) | \(\theta\) | Valuation discount caused by delayed receipt |
+| \(\gamma\) | Revenue discount caused by deferred cash recovery | \(\ell\) | Shopping-cost difference between offline and online channels |
+| \(\alpha\) | Pay-on-delivery service-fee rate | \(\beta\) | Agency commission rate |
+| \(p_f,p_n\) | Offline and online retail prices | \(w\) | Wholesale price |
+| \(D_f,D_n\) | Offline and online demands | \(\pi_m,\pi_p\) | Manufacturer and platform profits |
+| \(CS\) | Consumer surplus | \(SW\) | Social welfare |
 
-## Output
+## Consumer Utilities
 
-| Output | Description |
-|---|---|
-| Equilibrium prices | Wholesale, online retail, and offline retail prices |
-| Channel demand | Demand in the online and offline channels |
-| Total demand | Combined market demand across both channels |
-| Manufacturer profit | Profit from offline sales and online-channel cooperation |
-| Platform profit | Reselling margin, commission revenue, and service-fee revenue |
-| Pay-on-delivery adoption | Conditions under which the platform and manufacturer adopt the service |
-| Contract selection | Conditions determining wholesale versus agency selling |
-| Consumer surplus | Consumer welfare under each contract and payment scenario |
-| Social welfare | Combined firm profits and consumer surplus |
-| Return-related outcomes | Adoption and contract decisions when product returns are included |
-| Robustness outcomes | Results with different discount factors for product valuation and cash |
+Consumer utility from purchasing offline is
+
+\[
+u_f=v-p_f-\ell.
+\]
+
+Without pay-on-delivery, consumers pay when ordering but receive the product later:
+
+\[
+u_n^N=\theta v-p_n.
+\]
+
+With pay-on-delivery, both product receipt and payment occur later:
+
+\[
+u_n^Y=\theta(v-p_n).
+\]
+
+A lower \(\theta\) represents a more severe delivery-delay disadvantage. Pay-on-delivery improves the online channel by allowing consumers to postpone payment, but the selling firm receives discounted future revenue.
+
+## Profit Structure
+
+Under a wholesale contract, the manufacturer earns offline sales revenue and wholesale revenue, while the platform earns the online reselling margin:
+
+\[
+\begin{aligned}
+\pi_m^{WN}
+&=
+p_f^{WN}D_f^{WN}+w^{WN}D_n^{WN},\\
+\pi_p^{WN}
+&=
+\left(p_n^{WN}-w^{WN}\right)D_n^{WN},
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\pi_m^{WY}
+&=
+p_f^{WY}D_f^{WY}+w^{WY}D_n^{WY},\\
+\pi_p^{WY}
+&=
+\left(\gamma p_n^{WY}-w^{WY}\right)D_n^{WY}.
+\end{aligned}
+\]
+
+Under an agency contract, the manufacturer controls both retail prices and shares online revenue with the platform:
+
+\[
+\begin{aligned}
+\pi_m^{AN}
+&=
+p_f^{AN}D_f^{AN}
++(1-\beta)p_n^{AN}D_n^{AN},\\
+\pi_p^{AN}
+&=
+\beta p_n^{AN}D_n^{AN},
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\pi_m^{AY}
+&=
+p_f^{AY}D_f^{AY}
++\gamma(1-\alpha-\beta)p_n^{AY}D_n^{AY},\\
+\pi_p^{AY}
+&=
+\gamma(\alpha+\beta)p_n^{AY}D_n^{AY}.
+\end{aligned}
+\]
+
+## Solution Method
+
+The four scenarios are solved using backward induction. Equilibrium prices, channel demands, firm profits, consumer surplus, and social welfare are compared to determine:
+
+1. whether pay-on-delivery is adopted;
+2. how it changes online and offline channel outcomes; and
+3. whether the manufacturer selects the wholesale or agency contract.
+
+The analysis combines analytical equilibrium derivation, comparative statics, and Mathematica-based numerical analysis.

@@ -1,11 +1,7 @@
 # Research Questions
 
-This project addresses the following questions:
+This project focuses on three main questions:
 
-- Under what conditions should an e-commerce platform offer pay-on-delivery?
-- When should a manufacturer adopt pay-on-delivery under an agency contract?
-- How does pay-on-delivery affect online and offline prices and demand?
-- How does pay-on-delivery affect manufacturer and platform profits?
-- How does pay-on-delivery change the manufacturer's choice between wholesale and agency contracts?
-- What are the effects on consumer surplus and social welfare?
-- How do product returns and different discount factors for products and cash affect the main conclusions?
+1. Under what conditions should pay-on-delivery be adopted under different distribution contracts?
+2. How does pay-on-delivery affect firm profits, consumer surplus, and social welfare?
+3. How does the availability of pay-on-delivery influence the manufacturer's choice between wholesale and agency contracts?

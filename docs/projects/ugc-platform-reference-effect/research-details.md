@@ -1,93 +1,98 @@
 # Research Details
 
-## Input
+## Market Setting
 
-This project develops a theoretical dynamic model rather than using an empirical dataset.
+The model considers a Stackelberg game between a UGC platform and a content creator.
 
-| Input | Description |
-|---|---|
-| UGC platform | Determines the recommendation intensity of pure content |
-| Content creator | Determines the quality of pure content |
-| Pure content | Non-commercial content used to attract and retain users |
-| Shoppable content | Commercial content that directly generates platform revenue |
-| \(c(t)\) | Recommendation intensity of pure content |
-| \(1-c(t)\) | Recommendation intensity of shoppable content |
-| \(q(t)\) | Quality of pure content |
-| \(r(t)\) | Consumer reference quality based on previous content experience |
-| \(N(t)\) | User engagement on the platform |
-| \(N_0\) | Base level of user engagement |
-| \(\alpha\) | Sensitivity of user engagement to pure content quality |
-| \(\phi\) | Sensitivity of user engagement to the reference-quality effect |
-| \(\rho\) | Consumer aversion to shoppable content |
-| \(b\) | Consumer memory-decay rate |
-| \(k\) | Content-quality production cost coefficient |
-| \(n\) | Platform revenue per unit view of shoppable content |
-| \(l\) | Creator revenue per unit view of pure content |
-| \(\epsilon\) | Uncertainty level of consumer reference quality |
+The platform acts as the leader and determines the recommendation intensity of pure content, denoted by \(c(t)\). The remaining proportion, \(1-c(t)\), represents the recommendation intensity of shoppable content.
 
-## Model
+After observing the platform's decision, the content creator determines the quality of pure content, denoted by \(q(t)\).
 
-The project models a Stackelberg game in which the UGC platform acts as the leader and the content creator acts as the follower.
+Pure content helps attract and retain users, while shoppable content generates direct commercial revenue for the platform. The platform must therefore balance user engagement against commercial exposure.
 
-The platform first determines the recommendation intensity of pure content. After observing the platform's decision, the creator determines pure content quality.
+## Decision Scenarios
 
-Consumer reference quality evolves according to:
+![Comparison of static and dynamic UGC strategies](../../assets/images/ugccomparison.png){ width="100%" }
 
-\[
-dr(t)=b\bigl(q(t)-r(t)\bigr)dt
-\]
-
-User engagement is modeled as:
-
-\[
-N(t)=N_0+\alpha q(t)+\phi\bigl(q(t)-r(t)\bigr)-\rho\bigl(1-c(t)\bigr)
-\]
-
-The platform earns revenue from shoppable-content views:
-
-\[
-P_p(t)=nN(t)\bigl(1-c(t)\bigr)
-\]
-
-The content creator earns revenue from pure-content views and incurs a quality-production cost:
-
-\[
-P_c(t)=lN(t)c(t)-kq(t)^2
-\]
-
-The analysis compares three scenarios.
+*Figure 1. Reference quality, pure-content quality, and recommendation intensity under static and dynamic decisions.*
 
 | Scenario | Description |
 |---|---|
-| **CN** | Static pure content quality and recommendation intensity |
-| **DN** | Dynamic quality and recommendation intensity without reference-quality uncertainty |
-| **DS** | Dynamic quality and recommendation intensity with stochastic reference-quality uncertainty |
+| **CN** | Static content quality and recommendation intensity |
+| **DN** | Dynamic decisions without reference-quality uncertainty |
+| **DS** | Dynamic decisions with stochastic reference-quality uncertainty |
 
-Under the stochastic scenario, reference quality follows:
+## Model Notation
+
+| Symbol | Meaning | Symbol | Meaning |
+|---|---|---|---|
+| \(c(t)\) | Recommendation intensity of pure content | \(1-c(t)\) | Recommendation intensity of shoppable content |
+| \(q(t)\) | Quality of pure content | \(r(t)\) | Consumer reference quality |
+| \(N(t)\) | User engagement | \(N_0\) | Base level of user engagement |
+| \(\alpha\) | Sensitivity to pure-content quality | \(\phi\) | Sensitivity to the reference-quality effect |
+| \(\rho\) | Consumer aversion to shoppable content | \(b\) | Consumer memory-decay rate |
+| \(n\) | Platform revenue per shoppable-content view | \(l\) | Creator revenue per pure-content view |
+| \(k\) | Content-quality cost coefficient | \(\epsilon\) | Reference-quality uncertainty level |
+
+## Reference Quality and User Engagement
+
+Consumer reference quality evolves according to
+
+\[
+dr(t)=b\bigl(q(t)-r(t)\bigr)dt.
+\]
+
+Current content quality affects future user expectations. When current quality exceeds reference quality, users experience a positive reference effect; when it falls below reference quality, user engagement is negatively affected.
+
+User engagement is modeled as
+
+\[
+N(t)
+=
+N_0
++\alpha q(t)
++\phi\bigl(q(t)-r(t)\bigr)
+-\rho\bigl(1-c(t)\bigr).
+\]
+
+User engagement increases with pure-content quality and decreases with exposure to shoppable content.
+
+## Profit Structure
+
+The platform earns revenue from views of shoppable content:
+
+\[
+P_p(t)
+=
+nN(t)\bigl(1-c(t)\bigr).
+\]
+
+The content creator earns revenue from views of pure content and incurs a quadratic quality-production cost:
+
+\[
+P_c(t)
+=
+lN(t)c(t)-kq(t)^2.
+\]
+
+The platform therefore balances the engagement benefit of recommending pure content against the direct revenue generated by shoppable content.
+
+## Reference-Quality Uncertainty
+
+Under the stochastic scenario, reference quality follows
 
 \[
 dr(t)
 =
 b\bigl(q(t)-r(t)\bigr)dt
 +
-\epsilon\sqrt{r(t)}\,dW(t)
+\epsilon\sqrt{r(t)}\,dW(t),
 \]
 
-The static model is solved through backward induction. The dynamic models are solved using optimal control theory, dynamic programming, Hamilton–Jacobi–Bellman equations, and differential-game analysis.
+where \(W(t)\) is a standard Brownian motion and \(\epsilon\) measures the uncertainty of consumer reference quality.
 
-Mathematica-based numerical simulations are used to compare the optimal paths and profits across the three scenarios.
+## Solution Method
 
-## Output
+The static scenario is solved through backward induction. The dynamic scenarios are analyzed using optimal control theory, dynamic programming, Hamilton–Jacobi–Bellman equations, and differential-game analysis.
 
-| Output | Description |
-|---|---|
-| Optimal recommendation intensity | Platform's optimal allocation between pure and shoppable content |
-| Optimal content quality | Creator's optimal pure content quality |
-| Reference-quality path | Evolution of consumer expectations over time |
-| User-engagement path | Evolution of platform engagement over time |
-| Platform profit | Discounted revenue generated from shoppable-content views |
-| Creator profit | Discounted revenue from pure-content views minus quality costs |
-| Steady-state outcomes | Long-run quality, recommendation intensity, and engagement |
-| Uncertainty effects | Changes in strategies and profits as reference-quality uncertainty increases |
-| Scenario comparisons | Differences among static, dynamic deterministic, and dynamic stochastic decisions |
-| Robustness results | Results under alternative nonlinear user-engagement functions |
+Mathematica-based numerical simulations are used to compare the optimal paths and profits under the CN, DN, and DS scenarios.
