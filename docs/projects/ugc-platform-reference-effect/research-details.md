@@ -12,7 +12,7 @@ Pure content helps attract and retain users, while shoppable content generates d
 
 ## Decision Scenarios
 
-![Comparison of static and dynamic UGC strategies](../../assets/images/ugccomparison.png){ width="100%" }
+![Comparison of static and dynamic UGC strategies](../../assets/images/ugccomparison.jpg){ width="100%" }
 
 *Figure 1. Reference quality, pure-content quality, and recommendation intensity under static and dynamic decisions.*
 
