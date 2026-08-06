@@ -1190,10 +1190,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
+  <a href="#market-setting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Input
+        Market Setting
       
     </span>
   </a>
@@ -1201,10 +1201,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#model" class="md-nav__link">
+  <a href="#decision-scenarios" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Model
+        Decision Scenarios
       
     </span>
   </a>
@@ -1212,10 +1212,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
+  <a href="#model-notation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Output
+        Model Notation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-quality-and-user-engagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference Quality and User Engagement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profit-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Profit Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-quality-uncertainty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference-Quality Uncertainty
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution Method
       
     </span>
   </a>
@@ -1745,110 +1789,14 @@
 
 
 <h1 id="research-details">Research Details<a class="headerlink" href="#research-details" title="Permanent link">&para;</a></h1>
-<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
-<p>This project develops a theoretical dynamic model rather than using an empirical dataset.</p>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UGC platform</td>
-<td>Determines the recommendation intensity of pure content</td>
-</tr>
-<tr>
-<td>Content creator</td>
-<td>Determines the quality of pure content</td>
-</tr>
-<tr>
-<td>Pure content</td>
-<td>Non-commercial content used to attract and retain users</td>
-</tr>
-<tr>
-<td>Shoppable content</td>
-<td>Commercial content that directly generates platform revenue</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(c(t)\)</span></td>
-<td>Recommendation intensity of pure content</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(1-c(t)\)</span></td>
-<td>Recommendation intensity of shoppable content</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(q(t)\)</span></td>
-<td>Quality of pure content</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(r(t)\)</span></td>
-<td>Consumer reference quality based on previous content experience</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(N(t)\)</span></td>
-<td>User engagement on the platform</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(N_0\)</span></td>
-<td>Base level of user engagement</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\alpha\)</span></td>
-<td>Sensitivity of user engagement to pure content quality</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\phi\)</span></td>
-<td>Sensitivity of user engagement to the reference-quality effect</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\rho\)</span></td>
-<td>Consumer aversion to shoppable content</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(b\)</span></td>
-<td>Consumer memory-decay rate</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(k\)</span></td>
-<td>Content-quality production cost coefficient</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(n\)</span></td>
-<td>Platform revenue per unit view of shoppable content</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(l\)</span></td>
-<td>Creator revenue per unit view of pure content</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\epsilon\)</span></td>
-<td>Uncertainty level of consumer reference quality</td>
-</tr>
-</tbody>
-</table>
-<h2 id="model">Model<a class="headerlink" href="#model" title="Permanent link">&para;</a></h2>
-<p>The project models a Stackelberg game in which the UGC platform acts as the leader and the content creator acts as the follower.</p>
-<p>The platform first determines the recommendation intensity of pure content. After observing the platform's decision, the creator determines pure content quality.</p>
-<p>Consumer reference quality evolves according to:</p>
-<div class="arithmatex">\[
-dr(t)=b\bigl(q(t)-r(t)\bigr)dt
-\]</div>
-<p>User engagement is modeled as:</p>
-<div class="arithmatex">\[
-N(t)=N_0+\alpha q(t)+\phi\bigl(q(t)-r(t)\bigr)-\rho\bigl(1-c(t)\bigr)
-\]</div>
-<p>The platform earns revenue from shoppable-content views:</p>
-<div class="arithmatex">\[
-P_p(t)=nN(t)\bigl(1-c(t)\bigr)
-\]</div>
-<p>The content creator earns revenue from pure-content views and incurs a quality-production cost:</p>
-<div class="arithmatex">\[
-P_c(t)=lN(t)c(t)-kq(t)^2
-\]</div>
-<p>The analysis compares three scenarios.</p>
+<h2 id="market-setting">Market Setting<a class="headerlink" href="#market-setting" title="Permanent link">&para;</a></h2>
+<p>The model considers a Stackelberg game between a UGC platform and a content creator.</p>
+<p>The platform acts as the leader and determines the recommendation intensity of pure content, denoted by <span class="arithmatex">\(c(t)\)</span>. The remaining proportion, <span class="arithmatex">\(1-c(t)\)</span>, represents the recommendation intensity of shoppable content.</p>
+<p>After observing the platform's decision, the content creator determines the quality of pure content, denoted by <span class="arithmatex">\(q(t)\)</span>.</p>
+<p>Pure content helps attract and retain users, while shoppable content generates direct commercial revenue for the platform. The platform must therefore balance user engagement against commercial exposure.</p>
+<h2 id="decision-scenarios">Decision Scenarios<a class="headerlink" href="#decision-scenarios" title="Permanent link">&para;</a></h2>
+<p><img alt="Comparison of static and dynamic UGC strategies" src="../../../assets/images/ugccomparison.jpg" width="100%" /></p>
+<p><em>Figure 1. Reference quality, pure-content quality, and recommendation intensity under static and dynamic decisions.</em></p>
 <table>
 <thead>
 <tr>
@@ -1859,79 +1807,116 @@ P_c(t)=lN(t)c(t)-kq(t)^2
 <tbody>
 <tr>
 <td><strong>CN</strong></td>
-<td>Static pure content quality and recommendation intensity</td>
+<td>Static content quality and recommendation intensity</td>
 </tr>
 <tr>
 <td><strong>DN</strong></td>
-<td>Dynamic quality and recommendation intensity without reference-quality uncertainty</td>
+<td>Dynamic decisions without reference-quality uncertainty</td>
 </tr>
 <tr>
 <td><strong>DS</strong></td>
-<td>Dynamic quality and recommendation intensity with stochastic reference-quality uncertainty</td>
+<td>Dynamic decisions with stochastic reference-quality uncertainty</td>
 </tr>
 </tbody>
 </table>
-<p>Under the stochastic scenario, reference quality follows:</p>
+<h2 id="model-notation">Model Notation<a class="headerlink" href="#model-notation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(c(t)\)</span></td>
+<td>Recommendation intensity of pure content</td>
+<td><span class="arithmatex">\(1-c(t)\)</span></td>
+<td>Recommendation intensity of shoppable content</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(q(t)\)</span></td>
+<td>Quality of pure content</td>
+<td><span class="arithmatex">\(r(t)\)</span></td>
+<td>Consumer reference quality</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(N(t)\)</span></td>
+<td>User engagement</td>
+<td><span class="arithmatex">\(N_0\)</span></td>
+<td>Base level of user engagement</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\alpha\)</span></td>
+<td>Sensitivity to pure-content quality</td>
+<td><span class="arithmatex">\(\phi\)</span></td>
+<td>Sensitivity to the reference-quality effect</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\rho\)</span></td>
+<td>Consumer aversion to shoppable content</td>
+<td><span class="arithmatex">\(b\)</span></td>
+<td>Consumer memory-decay rate</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n\)</span></td>
+<td>Platform revenue per shoppable-content view</td>
+<td><span class="arithmatex">\(l\)</span></td>
+<td>Creator revenue per pure-content view</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(k\)</span></td>
+<td>Content-quality cost coefficient</td>
+<td><span class="arithmatex">\(\epsilon\)</span></td>
+<td>Reference-quality uncertainty level</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference-quality-and-user-engagement">Reference Quality and User Engagement<a class="headerlink" href="#reference-quality-and-user-engagement" title="Permanent link">&para;</a></h2>
+<p>Consumer reference quality evolves according to</p>
+<div class="arithmatex">\[
+dr(t)=b\bigl(q(t)-r(t)\bigr)dt.
+\]</div>
+<p>Current content quality affects future user expectations. When current quality exceeds reference quality, users experience a positive reference effect; when it falls below reference quality, user engagement is negatively affected.</p>
+<p>User engagement is modeled as</p>
+<div class="arithmatex">\[
+N(t)
+=
+N_0
++\alpha q(t)
++\phi\bigl(q(t)-r(t)\bigr)
+-\rho\bigl(1-c(t)\bigr).
+\]</div>
+<p>User engagement increases with pure-content quality and decreases with exposure to shoppable content.</p>
+<h2 id="profit-structure">Profit Structure<a class="headerlink" href="#profit-structure" title="Permanent link">&para;</a></h2>
+<p>The platform earns revenue from views of shoppable content:</p>
+<div class="arithmatex">\[
+P_p(t)
+=
+nN(t)\bigl(1-c(t)\bigr).
+\]</div>
+<p>The content creator earns revenue from views of pure content and incurs a quadratic quality-production cost:</p>
+<div class="arithmatex">\[
+P_c(t)
+=
+lN(t)c(t)-kq(t)^2.
+\]</div>
+<p>The platform therefore balances the engagement benefit of recommending pure content against the direct revenue generated by shoppable content.</p>
+<h2 id="reference-quality-uncertainty">Reference-Quality Uncertainty<a class="headerlink" href="#reference-quality-uncertainty" title="Permanent link">&para;</a></h2>
+<p>Under the stochastic scenario, reference quality follows</p>
 <div class="arithmatex">\[
 dr(t)
 =
 b\bigl(q(t)-r(t)\bigr)dt
 +
-\epsilon\sqrt{r(t)}\,dW(t)
+\epsilon\sqrt{r(t)}\,dW(t),
 \]</div>
-<p>The static model is solved through backward induction. The dynamic models are solved using optimal control theory, dynamic programming, Hamilton–Jacobi–Bellman equations, and differential-game analysis.</p>
-<p>Mathematica-based numerical simulations are used to compare the optimal paths and profits across the three scenarios.</p>
-<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Output</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Optimal recommendation intensity</td>
-<td>Platform's optimal allocation between pure and shoppable content</td>
-</tr>
-<tr>
-<td>Optimal content quality</td>
-<td>Creator's optimal pure content quality</td>
-</tr>
-<tr>
-<td>Reference-quality path</td>
-<td>Evolution of consumer expectations over time</td>
-</tr>
-<tr>
-<td>User-engagement path</td>
-<td>Evolution of platform engagement over time</td>
-</tr>
-<tr>
-<td>Platform profit</td>
-<td>Discounted revenue generated from shoppable-content views</td>
-</tr>
-<tr>
-<td>Creator profit</td>
-<td>Discounted revenue from pure-content views minus quality costs</td>
-</tr>
-<tr>
-<td>Steady-state outcomes</td>
-<td>Long-run quality, recommendation intensity, and engagement</td>
-</tr>
-<tr>
-<td>Uncertainty effects</td>
-<td>Changes in strategies and profits as reference-quality uncertainty increases</td>
-</tr>
-<tr>
-<td>Scenario comparisons</td>
-<td>Differences among static, dynamic deterministic, and dynamic stochastic decisions</td>
-</tr>
-<tr>
-<td>Robustness results</td>
-<td>Results under alternative nonlinear user-engagement functions</td>
-</tr>
-</tbody>
-</table>
+<p>where <span class="arithmatex">\(W(t)\)</span> is a standard Brownian motion and <span class="arithmatex">\(\epsilon\)</span> measures the uncertainty of consumer reference quality.</p>
+<h2 id="solution-method">Solution Method<a class="headerlink" href="#solution-method" title="Permanent link">&para;</a></h2>
+<p>The static scenario is solved through backward induction. The dynamic scenarios are analyzed using optimal control theory, dynamic programming, Hamilton–Jacobi–Bellman equations, and differential-game analysis.</p>
+<p>Mathematica-based numerical simulations are used to compare the optimal paths and profits under the CN, DN, and DS scenarios.</p>
 
 
 
