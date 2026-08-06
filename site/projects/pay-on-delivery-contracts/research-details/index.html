@@ -1389,10 +1389,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
+  <a href="#market-setting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Input
+        Market Setting
       
     </span>
   </a>
@@ -1400,10 +1400,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#model" class="md-nav__link">
+  <a href="#operational-scenarios" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Model
+        Operational Scenarios
       
     </span>
   </a>
@@ -1411,10 +1411,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
+  <a href="#model-notation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Output
+        Model Notation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consumer-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consumer Utilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profit-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Profit Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution Method
       
     </span>
   </a>
@@ -1745,100 +1778,17 @@
 
 
 <h1 id="research-details">Research Details<a class="headerlink" href="#research-details" title="Permanent link">&para;</a></h1>
-<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
-<p>This project develops an analytical game-theoretic model rather than using an empirical dataset.</p>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Manufacturer</td>
-<td>Operates an offline channel and cooperates with an e-commerce platform online</td>
-</tr>
-<tr>
-<td>E-commerce platform</td>
-<td>Operates the online channel as either a reseller or an intermediary</td>
-</tr>
-<tr>
-<td>Consumers</td>
-<td>Choose between the offline channel, the online channel, and no purchase</td>
-</tr>
-<tr>
-<td>Wholesale contract</td>
-<td>The platform purchases from the manufacturer and resells online</td>
-</tr>
-<tr>
-<td>Agency contract</td>
-<td>The manufacturer sells directly through the platform and pays a commission</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(v\)</span></td>
-<td>Consumer valuation of the product</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\theta\)</span></td>
-<td>Valuation discount caused by delayed product receipt</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\gamma\)</span></td>
-<td>Revenue discount caused by the cash-flow opportunity cost of deferred payment</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(l\)</span></td>
-<td>Shopping-cost difference between the offline and online channels</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\alpha\)</span></td>
-<td>Pay-on-delivery service fee under the agency contract</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\beta\)</span></td>
-<td>Platform commission rate under the agency contract</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(p_f\)</span></td>
-<td>Offline retail price</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(p_n\)</span></td>
-<td>Online retail price</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(w\)</span></td>
-<td>Wholesale price under the wholesale contract</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\delta\)</span></td>
-<td>Probability that an online product fits consumer needs</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(m\)</span></td>
-<td>Consumer hassle cost associated with returning a product</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(c\)</span></td>
-<td>Return-handling cost borne by the online seller</td>
-</tr>
-</tbody>
-</table>
-<h2 id="model">Model<a class="headerlink" href="#model" title="Permanent link">&para;</a></h2>
-<p>Consumer utility from purchasing offline is:</p>
-<div class="arithmatex">\[
-u_f=v-p_f-l
-\]</div>
-<p>Without pay-on-delivery, online utility is:</p>
-<div class="arithmatex">\[
-u_n^N=\theta v-p_n
-\]</div>
-<p>With pay-on-delivery, consumers postpone payment until receiving the product:</p>
-<div class="arithmatex">\[
-u_n^Y=\theta(v-p_n)
-\]</div>
-<p>The analysis compares four scenarios.</p>
+<h2 id="market-setting">Market Setting<a class="headerlink" href="#market-setting" title="Permanent link">&para;</a></h2>
+<p>The model considers a dual-channel supply chain consisting of a manufacturer, an e-commerce platform, and a continuum of consumers.</p>
+<p>The manufacturer operates an offline channel and collaborates with the platform to establish an online channel:</p>
+<ul>
+<li>Under the <strong>wholesale contract</strong>, the platform purchases the product from the manufacturer and resells it online.</li>
+<li>Under the <strong>agency contract</strong>, the manufacturer sells directly through the platform and pays a commission fee.</li>
+</ul>
+<p>Pay-on-delivery allows consumers to postpone payment until product receipt. The service reduces the online channel's delivery-delay disadvantage but also postpones firms' cash recovery.</p>
+<h2 id="operational-scenarios">Operational Scenarios<a class="headerlink" href="#operational-scenarios" title="Permanent link">&para;</a></h2>
+<p><img alt="Channel configurations under the WN, WY, AN, and AY scenarios" src="../../../assets/images/payonde.jpg" width="100%" /></p>
+<p><em>Figure 1. Channel configurations under wholesale and agency contracts, with and without pay-on-delivery.</em></p>
 <table>
 <thead>
 <tr>
@@ -1850,90 +1800,143 @@ u_n^Y=\theta(v-p_n)
 <tbody>
 <tr>
 <td><strong>WN</strong></td>
-<td>Wholesale contract</td>
+<td>Wholesale</td>
 <td>No pay-on-delivery</td>
 </tr>
 <tr>
 <td><strong>WY</strong></td>
-<td>Wholesale contract</td>
+<td>Wholesale</td>
 <td>Pay-on-delivery</td>
 </tr>
 <tr>
 <td><strong>AN</strong></td>
-<td>Agency contract</td>
+<td>Agency</td>
 <td>No pay-on-delivery</td>
 </tr>
 <tr>
 <td><strong>AY</strong></td>
-<td>Agency contract</td>
+<td>Agency</td>
 <td>Pay-on-delivery</td>
 </tr>
 </tbody>
 </table>
-<p>The game proceeds through the following stages:</p>
-<ol>
-<li>The manufacturer selects the wholesale or agency contract.</li>
-<li>The platform decides whether to offer pay-on-delivery.</li>
-<li>Under the agency contract, the manufacturer decides whether to adopt the service.</li>
-<li>The manufacturer determines its relevant wholesale and offline prices.</li>
-<li>The platform or manufacturer determines the online retail price, depending on the contract.</li>
-</ol>
-<p>The model is solved using backward induction, equilibrium analysis, comparative statics, and Mathematica-based numerical analysis.</p>
-<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>Under the wholesale contract, the platform independently decides whether to offer pay-on-delivery. Under the agency contract, implementation requires both the platform's willingness to offer the service and the manufacturer's willingness to adopt it.</p>
+<h2 id="model-notation">Model Notation<a class="headerlink" href="#model-notation" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Output</th>
-<th>Description</th>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Symbol</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Equilibrium prices</td>
-<td>Wholesale, online retail, and offline retail prices</td>
+<td><span class="arithmatex">\(v\)</span></td>
+<td>Consumer valuation, <span class="arithmatex">\(v\sim U[0,1]\)</span></td>
+<td><span class="arithmatex">\(\theta\)</span></td>
+<td>Valuation discount caused by delayed receipt</td>
 </tr>
 <tr>
-<td>Channel demand</td>
-<td>Demand in the online and offline channels</td>
+<td><span class="arithmatex">\(\gamma\)</span></td>
+<td>Revenue discount caused by deferred cash recovery</td>
+<td><span class="arithmatex">\(\ell\)</span></td>
+<td>Shopping-cost difference between offline and online channels</td>
 </tr>
 <tr>
-<td>Total demand</td>
-<td>Combined market demand across both channels</td>
+<td><span class="arithmatex">\(\alpha\)</span></td>
+<td>Pay-on-delivery service-fee rate</td>
+<td><span class="arithmatex">\(\beta\)</span></td>
+<td>Agency commission rate</td>
 </tr>
 <tr>
-<td>Manufacturer profit</td>
-<td>Profit from offline sales and online-channel cooperation</td>
+<td><span class="arithmatex">\(p_f,p_n\)</span></td>
+<td>Offline and online retail prices</td>
+<td><span class="arithmatex">\(w\)</span></td>
+<td>Wholesale price</td>
 </tr>
 <tr>
-<td>Platform profit</td>
-<td>Reselling margin, commission revenue, and service-fee revenue</td>
+<td><span class="arithmatex">\(D_f,D_n\)</span></td>
+<td>Offline and online demands</td>
+<td><span class="arithmatex">\(\pi_m,\pi_p\)</span></td>
+<td>Manufacturer and platform profits</td>
 </tr>
 <tr>
-<td>Pay-on-delivery adoption</td>
-<td>Conditions under which the platform and manufacturer adopt the service</td>
-</tr>
-<tr>
-<td>Contract selection</td>
-<td>Conditions determining wholesale versus agency selling</td>
-</tr>
-<tr>
+<td><span class="arithmatex">\(CS\)</span></td>
 <td>Consumer surplus</td>
-<td>Consumer welfare under each contract and payment scenario</td>
-</tr>
-<tr>
+<td><span class="arithmatex">\(SW\)</span></td>
 <td>Social welfare</td>
-<td>Combined firm profits and consumer surplus</td>
-</tr>
-<tr>
-<td>Return-related outcomes</td>
-<td>Adoption and contract decisions when product returns are included</td>
-</tr>
-<tr>
-<td>Robustness outcomes</td>
-<td>Results with different discount factors for product valuation and cash</td>
 </tr>
 </tbody>
 </table>
+<h2 id="consumer-utilities">Consumer Utilities<a class="headerlink" href="#consumer-utilities" title="Permanent link">&para;</a></h2>
+<p>Consumer utility from purchasing offline is</p>
+<div class="arithmatex">\[
+u_f=v-p_f-\ell.
+\]</div>
+<p>Without pay-on-delivery, consumers pay when ordering but receive the product later:</p>
+<div class="arithmatex">\[
+u_n^N=\theta v-p_n.
+\]</div>
+<p>With pay-on-delivery, both product receipt and payment occur later:</p>
+<div class="arithmatex">\[
+u_n^Y=\theta(v-p_n).
+\]</div>
+<p>A lower <span class="arithmatex">\(\theta\)</span> represents a more severe delivery-delay disadvantage. Pay-on-delivery improves the online channel by allowing consumers to postpone payment, but the selling firm receives discounted future revenue.</p>
+<h2 id="profit-structure">Profit Structure<a class="headerlink" href="#profit-structure" title="Permanent link">&para;</a></h2>
+<p>Under a wholesale contract, the manufacturer earns offline sales revenue and wholesale revenue, while the platform earns the online reselling margin:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\pi_m^{WN}
+&amp;=
+p_f^{WN}D_f^{WN}+w^{WN}D_n^{WN},\\
+\pi_p^{WN}
+&amp;=
+\left(p_n^{WN}-w^{WN}\right)D_n^{WN},
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+\pi_m^{WY}
+&amp;=
+p_f^{WY}D_f^{WY}+w^{WY}D_n^{WY},\\
+\pi_p^{WY}
+&amp;=
+\left(\gamma p_n^{WY}-w^{WY}\right)D_n^{WY}.
+\end{aligned}
+\]</div>
+<p>Under an agency contract, the manufacturer controls both retail prices and shares online revenue with the platform:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\pi_m^{AN}
+&amp;=
+p_f^{AN}D_f^{AN}
++(1-\beta)p_n^{AN}D_n^{AN},\\
+\pi_p^{AN}
+&amp;=
+\beta p_n^{AN}D_n^{AN},
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+\pi_m^{AY}
+&amp;=
+p_f^{AY}D_f^{AY}
++\gamma(1-\alpha-\beta)p_n^{AY}D_n^{AY},\\
+\pi_p^{AY}
+&amp;=
+\gamma(\alpha+\beta)p_n^{AY}D_n^{AY}.
+\end{aligned}
+\]</div>
+<h2 id="solution-method">Solution Method<a class="headerlink" href="#solution-method" title="Permanent link">&para;</a></h2>
+<p>The four scenarios are solved using backward induction. Equilibrium prices, channel demands, firm profits, consumer surplus, and social welfare are compared to determine:</p>
+<ol>
+<li>whether pay-on-delivery is adopted;</li>
+<li>how it changes online and offline channel outcomes; and</li>
+<li>whether the manufacturer selects the wholesale or agency contract.</li>
+</ol>
+<p>The analysis combines analytical equilibrium derivation, comparative statics, and Mathematica-based numerical analysis.</p>
 
 
 

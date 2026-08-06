@@ -820,10 +820,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
+  <a href="#market-setting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Input
+        Market Setting
       
     </span>
   </a>
@@ -831,15 +831,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#model" class="md-nav__link">
+  <a href="#operational-modes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Model
+        Operational Modes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Model">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Notation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consumer-utilities-and-demands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consumer Utilities and Demands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consumer Utilities and Demands">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -881,10 +903,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
+  <a href="#profit-functions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Output
+        Profit Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Profit Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nn-mode_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NN Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-mode_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IN Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-mode_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution Method
       
     </span>
   </a>
@@ -1784,74 +1856,18 @@
 
 
 <h1 id="research-details">Research Details<a class="headerlink" href="#research-details" title="Permanent link">&para;</a></h1>
-<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
-<p>This project uses an analytical model rather than an empirical dataset.</p>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hybrid platform</td>
-<td>Resells product A and provides marketplace access to a third-party seller</td>
-</tr>
-<tr>
-<td>Wholesale supplier</td>
-<td>Supplies product A to the platform and determines the wholesale price</td>
-</tr>
-<tr>
-<td>Third-party seller</td>
-<td>Sells a substitute product B directly through the platform</td>
-</tr>
-<tr>
-<td>Consumers</td>
-<td>Choose between product A, product B, and no purchase</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(v\)</span></td>
-<td>Consumer valuation of product A</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\lambda\)</span></td>
-<td>Product differentiation between products A and B</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\alpha\)</span></td>
-<td>Commission rate charged by the platform</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\beta\)</span></td>
-<td>Additional fee charged for sharing the consumer credit service</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\gamma\)</span></td>
-<td>Consumer preference for the credit service</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(\theta\)</span></td>
-<td>Consumer repayment rate</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(w_a\)</span></td>
-<td>Wholesale price of product A</td>
-</tr>
-<tr>
-<td><span class="arithmatex">\(p_a, p_b\)</span></td>
-<td>Retail prices of products A and B</td>
-</tr>
-</tbody>
-</table>
-<h2 id="model">Model<a class="headerlink" href="#model" title="Permanent link">&para;</a></h2>
-<p>The analysis compares three operational modes.</p>
+<h2 id="market-setting">Market Setting<a class="headerlink" href="#market-setting" title="Permanent link">&para;</a></h2>
+<p>The model considers a hybrid e-commerce market consisting of a wholesale supplier, a platform, a third-party seller, and a continuum of consumers. The platform purchases product A from the wholesale supplier and resells it to consumers, while the third-party seller sells a substitute product B directly through the platform.</p>
+<p>The seller pays the platform a commission rate <span class="arithmatex">\(\alpha\)</span>. If the platform shares its consumer credit service with the seller, the seller also pays an additional service-fee rate <span class="arithmatex">\(\beta\)</span>. Consumer credit increases consumers' willingness to pay, but the platform bears losses associated with non-repayment.</p>
+<h2 id="operational-modes">Operational Modes<a class="headerlink" href="#operational-modes" title="Permanent link">&para;</a></h2>
+<p><img alt="Structure of the NN, IN, and II operational modes" src="../../../assets/images/ecomerceimage.png" width="100%" /></p>
+<p><em>Figure 1. No credit service (NN), exclusive provision by the platform (IN), and service sharing with the third-party seller (II).</em></p>
 <table>
 <thead>
 <tr>
 <th>Mode</th>
-<th>Platform product</th>
-<th>Third-party seller product</th>
+<th>Platform's product A</th>
+<th>Seller's product B</th>
 </tr>
 </thead>
 <tbody>
@@ -1872,88 +1888,136 @@
 </tr>
 </tbody>
 </table>
-<p>Consumer utilities under the three modes are represented as follows:</p>
-<h3 id="nn-mode">NN Mode<a class="headerlink" href="#nn-mode" title="Permanent link">&para;</a></h3>
-<div class="arithmatex">\[
-u_a = v-p_a
-\]</div>
-<div class="arithmatex">\[
-u_b = \lambda v-p_b
-\]</div>
-<h3 id="in-mode">IN Mode<a class="headerlink" href="#in-mode" title="Permanent link">&para;</a></h3>
-<div class="arithmatex">\[
-u_a = v-p_a+\gamma p_a
-\]</div>
-<div class="arithmatex">\[
-u_b = \lambda v-p_b
-\]</div>
-<h3 id="ii-mode">II Mode<a class="headerlink" href="#ii-mode" title="Permanent link">&para;</a></h3>
-<div class="arithmatex">\[
-u_a = v-p_a+\gamma p_a
-\]</div>
-<div class="arithmatex">\[
-u_b = \lambda v-p_b+\gamma p_b
-\]</div>
-<p>The sequence of decisions is:</p>
-<ol>
-<li>The wholesale supplier determines the wholesale price.</li>
-<li>The platform and third-party seller simultaneously determine retail prices.</li>
-<li>Consumers choose between the two products or no purchase.</li>
-<li>Equilibrium prices, demand, profits, and consumer surplus are derived.</li>
-<li>The three operational modes are compared to determine the optimal provision and sharing strategies.</li>
-</ol>
-<p>The model is solved using backward induction, equilibrium analysis, comparative statics, and Mathematica-based numerical simulations.</p>
-<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<h2 id="model-notation">Model Notation<a class="headerlink" href="#model-notation" title="Permanent link">&para;</a></h2>
+<p>For compact presentation, the notation is arranged in paired columns. The superscript <span class="arithmatex">\(k\in\{NN,IN,II\}\)</span> denotes the operational mode, and the subscript <span class="arithmatex">\(i\in\{W,T,P\}\)</span> denotes the wholesale supplier, third-party seller, and platform.</p>
 <table>
 <thead>
 <tr>
-<th>Output</th>
-<th>Description</th>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Symbol</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Equilibrium wholesale price</td>
-<td>Optimal wholesale price selected by the supplier</td>
+<td><span class="arithmatex">\(v\)</span></td>
+<td>Consumer valuation of product A</td>
+<td><span class="arithmatex">\(\lambda\)</span></td>
+<td>Product differentiation between A and B</td>
 </tr>
 <tr>
-<td>Equilibrium retail prices</td>
-<td>Optimal prices of products A and B</td>
+<td><span class="arithmatex">\(p_a^k\)</span></td>
+<td>Retail price of product A</td>
+<td><span class="arithmatex">\(p_b^k\)</span></td>
+<td>Retail price of product B</td>
 </tr>
 <tr>
-<td>Product demand</td>
-<td>Demand for each product under the NN, IN, and II modes</td>
+<td><span class="arithmatex">\(w_a^k\)</span></td>
+<td>Wholesale price of product A</td>
+<td><span class="arithmatex">\(D_a^k,D_b^k\)</span></td>
+<td>Demands for products A and B</td>
 </tr>
 <tr>
-<td>Platform profit</td>
-<td>Profit from product sales, commissions, and service fees</td>
+<td><span class="arithmatex">\(\alpha\)</span></td>
+<td>Platform commission rate</td>
+<td><span class="arithmatex">\(\beta\)</span></td>
+<td>Credit-service fee charged to the seller</td>
 </tr>
 <tr>
-<td>Supplier profit</td>
-<td>Profit earned from supplying product A</td>
+<td><span class="arithmatex">\(\gamma\)</span></td>
+<td>Consumer preference for the credit service</td>
+<td><span class="arithmatex">\(\theta\)</span></td>
+<td>Consumer repayment rate</td>
 </tr>
 <tr>
-<td>Third-party seller profit</td>
-<td>Seller profit after commission and service fees</td>
-</tr>
-<tr>
+<td><span class="arithmatex">\(\pi_i^k\)</span></td>
+<td>Profit of market participant <span class="arithmatex">\(i\)</span></td>
+<td><span class="arithmatex">\(CS^k\)</span></td>
 <td>Consumer surplus</td>
-<td>Consumer welfare under each operational mode</td>
 </tr>
 <tr>
-<td>Provision condition</td>
-<td>Conditions under which the platform launches the credit service</td>
-</tr>
-<tr>
-<td>Sharing condition</td>
-<td>Conditions under which the platform and seller agree to share the service</td>
-</tr>
-<tr>
-<td>Extension results</td>
-<td>Outcomes when some consumers choose not to use the credit service</td>
+<td><span class="arithmatex">\(\delta\)</span></td>
+<td>Share of consumers willing to use credit</td>
+<td><span class="arithmatex">\(1-\delta\)</span></td>
+<td>Share of conservative consumers in the extension</td>
 </tr>
 </tbody>
 </table>
+<p>The base model assumes <span class="arithmatex">\(v\sim U[0,1]\)</span>, <span class="arithmatex">\(0&lt;\lambda&lt;1\)</span>, <span class="arithmatex">\(0&lt;\alpha&lt;1/5\)</span>, <span class="arithmatex">\(0&lt;\beta&lt;1/10\)</span>, and <span class="arithmatex">\(1/2&lt;\theta&lt;1\)</span>.</p>
+<h2 id="consumer-utilities-and-demands">Consumer Utilities and Demands<a class="headerlink" href="#consumer-utilities-and-demands" title="Permanent link">&para;</a></h2>
+<h3 id="nn-mode">NN Mode<a class="headerlink" href="#nn-mode" title="Permanent link">&para;</a></h3>
+<p>Neither channel offers consumer credit:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+u_a^{NN} &amp;= v-p_a^{NN},
+&amp;u_b^{NN} &amp;= \lambda v-p_b^{NN},\\
+D_a^{NN} &amp;= 1-\frac{p_a^{NN}-p_b^{NN}}{1-\lambda},
+&amp;D_b^{NN} &amp;= \frac{p_a^{NN}-p_b^{NN}}{1-\lambda}
+-\frac{p_b^{NN}}{\lambda}.
+\end{aligned}
+\]</div>
+<h3 id="in-mode">IN Mode<a class="headerlink" href="#in-mode" title="Permanent link">&para;</a></h3>
+<p>Only the platform's product offers consumer credit:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+u_a^{IN} &amp;= v-p_a^{IN}+\gamma p_a^{IN},
+&amp;u_b^{IN} &amp;= \lambda v-p_b^{IN},\\
+D_a^{IN} &amp;= 1-\frac{(1-\gamma)p_a^{IN}-p_b^{IN}}{1-\lambda},
+&amp;D_b^{IN} &amp;= \frac{(1-\gamma)p_a^{IN}-p_b^{IN}}{1-\lambda}
+-\frac{p_b^{IN}}{\lambda}.
+\end{aligned}
+\]</div>
+<h3 id="ii-mode">II Mode<a class="headerlink" href="#ii-mode" title="Permanent link">&para;</a></h3>
+<p>Both products offer the platform's consumer credit service:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+u_a^{II} &amp;= v-p_a^{II}+\gamma p_a^{II},
+&amp;u_b^{II} &amp;= \lambda v-p_b^{II}+\gamma p_b^{II},\\
+D_a^{II} &amp;= 1-\frac{(1-\gamma)(p_a^{II}-p_b^{II})}{1-\lambda},
+&amp;D_b^{II} &amp;= \frac{(1-\gamma)(p_a^{II}-p_b^{II})}{1-\lambda}
+-\frac{(1-\gamma)p_b^{II}}{\lambda}.
+\end{aligned}
+\]</div>
+<h2 id="profit-functions">Profit Functions<a class="headerlink" href="#profit-functions" title="Permanent link">&para;</a></h2>
+<h3 id="nn-mode_1">NN Mode<a class="headerlink" href="#nn-mode_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\begin{aligned}
+\pi_W^{NN} &amp;= w_a^{NN}D_a^{NN},\\
+\pi_T^{NN} &amp;= (1-\alpha)p_b^{NN}D_b^{NN},\\
+\pi_P^{NN} &amp;= (p_a^{NN}-w_a^{NN})D_a^{NN}
++\alpha p_b^{NN}D_b^{NN}.
+\end{aligned}
+\]</div>
+<h3 id="in-mode_1">IN Mode<a class="headerlink" href="#in-mode_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\begin{aligned}
+\pi_W^{IN} &amp;= w_a^{IN}D_a^{IN},\\
+\pi_T^{IN} &amp;= (1-\alpha)p_b^{IN}D_b^{IN},\\
+\pi_P^{IN} &amp;= (\theta p_a^{IN}-w_a^{IN})D_a^{IN}
++\alpha p_b^{IN}D_b^{IN}.
+\end{aligned}
+\]</div>
+<h3 id="ii-mode_1">II Mode<a class="headerlink" href="#ii-mode_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\begin{aligned}
+\pi_W^{II} &amp;= w_a^{II}D_a^{II},\\
+\pi_T^{II} &amp;= (1-\alpha-\beta)p_b^{II}D_b^{II},\\
+\pi_P^{II} &amp;= (\theta p_a^{II}-w_a^{II})D_a^{II}
++(\alpha+\beta)p_b^{II}D_b^{II}
+-(1-\theta)p_b^{II}D_b^{II}.
+\end{aligned}
+\]</div>
+<h2 id="solution-method">Solution Method<a class="headerlink" href="#solution-method" title="Permanent link">&para;</a></h2>
+<p>The game is solved by backward induction:</p>
+<ol>
+<li>The wholesale supplier chooses the wholesale price <span class="arithmatex">\(w_a^k\)</span>.</li>
+<li>The platform and third-party seller simultaneously choose retail prices <span class="arithmatex">\(p_a^k\)</span> and <span class="arithmatex">\(p_b^k\)</span>.</li>
+<li>Consumers choose product A, product B, or no purchase.</li>
+<li>Equilibrium prices, demands, profits, and consumer surplus are derived for each mode.</li>
+<li>The equilibrium outcomes are compared to determine the platform's provision and sharing strategies.</li>
+</ol>
+<p>The analysis combines analytical equilibrium derivation, comparative statics, and Mathematica-based numerical simulations.</p>
 
 
 
