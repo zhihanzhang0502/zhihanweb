@@ -35,12 +35,12 @@ nav:
           - Key Findings & Outputs: projects/ecommerce-consumer-credit/key-findings-outputs.md
           - Publications: projects/ecommerce-consumer-credit/publications.md
 
-      - Quantitative Research Internship:
-          - Overview: projects/quant-internship/overview.md
-          - Research Questions: projects/quant-internship/research-questions.md
-          - Research Details: projects/quant-internship/research-details.md
-          - Key Findings & Outputs: projects/quant-internship/key-findings-outputs.md
-          # - Publications: projects/quant-internship/publications.md
+    #   - Quantitative Research Internship:
+    #       - Overview: projects/quant-internship/overview.md
+    #       - Research Questions: projects/quant-internship/research-questions.md
+    #       - Research Details: projects/quant-internship/research-details.md
+    #       - Key Findings & Outputs: projects/quant-internship/key-findings-outputs.md
+    #       # - Publications: projects/quant-internship/publications.md
 
       - Dynamic Control on UGC Platforms:
           - Overview: projects/ugc-platform-reference-effect/overview.md
@@ -62,6 +62,15 @@ nav:
           - Research Details: projects/ai-assisted-ugc-platforms/research-details.md
           - Key Findings & Outputs: projects/ai-assisted-ugc-platforms/key-findings-outputs.md
           - Publications: projects/ai-assisted-ugc-platforms/publications.md
+
+  - Work Experience:
+      - Quantitative Research Internship:
+          - Overview: projects/quant-internship/overview.md
+          - Research Questions: projects/quant-internship/research-questions.md
+          - Research Details: projects/quant-internship/research-details.md
+          - Key Findings & Outputs: projects/quant-internship/key-findings-outputs.md
+          # - Publications: projects/quant-internship/publications.md
+
   - CV: cv.md
 
 markdown_extensions:
