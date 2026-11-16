@@ -20,13 +20,14 @@ nav:
           - Research Details: projects/crypto-policy-stablecoin-inflation/research-details.md
           - Key Findings & Outputs: projects/crypto-policy-stablecoin-inflation/key-findings-outputs.md
           - Demo code: projects/crypto-policy-stablecoin-inflation/crypto-results-code.md
+          - Publications: projects/crypto-policy-stablecoin-inflation/publications.md
 
       - State-Dependent DEX-CEX Price Discovery:
           - Overview: projects/dex-cex-price-discovery/overview.md
           - Research Questions: projects/dex-cex-price-discovery/research-questions.md
           - Research Details: projects/dex-cex-price-discovery/research-details.md
           - Key Findings & Outputs: projects/dex-cex-price-discovery/key-findings-outputs.md
-        #   - Publications: projects/dex-cex-price-discovery/publications.md
+          - Publications: projects/dex-cex-price-discovery/publications.md
 
       - E-commerce Consumer Credit Model:
           - Overview: projects/ecommerce-consumer-credit/overview.md
