@@ -9,4 +9,4 @@ The model considers a hybrid platform that resells one product while allowing a 
 My contributions included formulating research question, performing Mathematica-based numerical simulations, and contributing to the co-authored research paper.
 
 **Duration:** May 2024 – August 2024
-**Affiliation:** Tongji University, China
+**Affiliation:** Shanghai University of International Business and Economics, China
